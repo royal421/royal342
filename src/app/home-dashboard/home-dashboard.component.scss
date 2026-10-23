@@ -1,0 +1,227 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  overflow: auto;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.home-container {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.home-header {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.titles {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.quick-actions {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.metrics {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.local-projects {
+  --background: #1E1E1E;
+  --outline-color: #333333;
+  min-width: 240px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.content {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.dashboard-split-content {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.recent-projects-column {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 400px;
+  flex-grow: 2;
+  flex-basis: 0;
+}
+.templates-and-presets-column {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  min-width: 300px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.content_2 {
+  color: #FFFFFF;
+  height: max-content;
+  min-width: min-content;
+}
+.app-subtitle {
+  color: #AAAAAA;
+  height: max-content;
+  min-width: min-content;
+}
+.icon {
+  color: #FFFFFF;
+}
+.icon_1 {
+  color: #00E5FF;
+}
+.icon_2 {
+  color: #AAAAAA;
+}
+.local-avatar {
+  --igx-avatar-background: #8A2BE2;
+}
+.cloud-avatar {
+  --igx-avatar-background: #00E5FF;
+}
+.icon_3 {
+  color: #121212;
+}
+.avatar-xl-5abg {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: #00E5FF;
+}
+.avatar-2d-3pbe {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: #8A2BE2;
+}
+.local-avatar_1::part(base) {
+  --igx-avatar-color: #FFFFFF;
+}
+.local-avatar_2::part(base) {
+  --igx-avatar-color: #FFFFFF;
+}
+.cloud-avatar_1::part(base) {
+  --igx-avatar-color: #121212;
+}
+.cloud-avatar_2::part(base) {
+  --igx-avatar-color: #121212;
+}
+.avatar-xl-5abg_1::part(base) {
+  --igx-avatar-color: #121212;
+}
+.avatar-2d-3pbe_1::part(base) {
+  --igx-avatar-color: #FFFFFF;
+}
+.avatar-2d-3pbe_2::part(base) {
+  --igx-avatar-color: #FFFFFF;
+}
+.new-project-button {
+  --foreground: #FFFFFF;
+  --background: #8A2BE2;
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.ai-quick-edit-button {
+  --foreground: #00E5FF;
+  --border-color: #00E5FF;
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.draft-recovery {
+  --foreground: #AAAAAA;
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.recent-projects-grid {
+  min-width: 400px;
+  min-height: 220px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.presets-list {
+  height: max-content;
+}
+.phonk-cinematic-preset {
+  --item-background: #1E1E1E;
+  --item-background-hover: var(--ig-list-item-background-hover, lch(from var(--item-background) calc(l + (50 - l) * 0.1 + sign(50 - l) * 5) c h));
+  --item-background-active: var(--ig-list-item-background-active, var(--item-background-hover));
+  --item-background-selected: var(--ig-list-item-background-selected, var(--item-background-active));
+  --item-text-color: #FFFFFF;
+  --item-text-color-hover: #FFFFFF;
+  --item-text-color-active: #FFFFFF;
+  --item-text-color-selected: #FFFFFF;
+  --item-title-color: #FFFFFF;
+  --item-title-color-hover: #FFFFFF;
+  --item-title-color-active: #FFFFFF;
+  --item-title-color-selected: #FFFFFF;
+  --item-action-color: #FFFFFF;
+  --item-action-color-hover: #FFFFFF;
+  --item-action-color-active: #FFFFFF;
+  --item-action-color-selected: #FFFFFF;
+  --item-subtitle-color: #FFFFFF;
+  --item-subtitle-color-hover: #FFFFFF;
+  --item-subtitle-color-active: #FFFFFF;
+  --item-subtitle-color-selected: #FFFFFF;
+  --item-thumbnail-color: #FFFFFF;
+  --item-thumbnail-color-hover: #FFFFFF;
+  --item-thumbnail-color-active: #FFFFFF;
+  --item-thumbnail-color-selected: #FFFFFF;
+}

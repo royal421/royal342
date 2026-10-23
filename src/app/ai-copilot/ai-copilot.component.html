@@ -1,0 +1,123 @@
+<div class="row-layout copilot-container">
+  <div class="column-layout ai-input-chat">
+    <div class="column-layout header">
+      <div class="row-layout badge-title">
+        <igx-avatar shape="circle" class="copilot-avatar copilot-avatar_1">
+          <igx-icon class="icon">
+            assistant
+          </igx-icon>
+        </igx-avatar>
+        <h4 class="content">
+          AI Copilot Assistant
+        </h4>
+      </div>
+      <p class="ig-typography__body-2 description">
+        Let the AI generate complete non-destructive video recipes, color LUTs, and sync markers locally.
+      </p>
+    </div>
+    <div class="column-layout chat-simulation">
+      <div class="row-layout user-bubble">
+        <div class="column-layout user-text">
+          <p class="ig-typography__body-2 content">
+            Meri car video ko dark cinematic phonk style do.
+          </p>
+        </div>
+      </div>
+      <div class="row-layout ai-bubble">
+        <igx-avatar shape="circle" class="ai-tiny-avatar ai-tiny-avatar_1">
+          <igx-icon class="icon_1">
+            smart_toy
+          </igx-icon>
+        </igx-avatar>
+        <div class="column-layout ai-text">
+          <p class="ig-typography__body-2 content">
+            Analyzing audio &amp; video signals... Done! Generated an adaptive Phonk Beat sync edit recipe, a Cyberpunk Neon LUT, slow-mo drift transitions, and auto captions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="column-layout input-area">
+      <igx-input-group type="border" class="prompt-input">
+        <label igxLabel>Type your request</label>
+        <textarea placeholder="Write aesthetic or editing instructions..." [(ngModel)]="value" required="true" igxInput></textarea>
+      </igx-input-group>
+      <button igxButton="contained" type="button" class="submit-ai-button">
+        <igx-icon class="icon">
+          auto_awesome
+        </igx-icon>
+        <span>Generate Edit Recipe</span>
+      </button>
+    </div>
+  </div>
+  <div class="column-layout ai-proposed-recipe">
+    <div class="row-layout recipe-header">
+      <h5 class="content">
+        Proposed AI Changes
+      </h5>
+      <igx-badge type="info" value="Local AI Preview" class="recipe-badge"></igx-badge>
+    </div>
+    <p class="ig-typography__caption description">
+      These proposed edits will be applied non-destructively to your active timeline tracks. Review the proposed changes below.
+    </p>
+    <igx-list class="ingredients-list">
+      <igx-list-item [selected]="this.ingredientsListSelectedItem != null && this.ingredientsListSelectedItem === '0'" (click)="ingredientsListSelectedItem = '0'" class="beat-syncing">
+        <span igxListThumbnail>
+          <igx-avatar shape="circle" class="ai-tiny-avatar ai-tiny-avatar_2">
+            <igx-icon class="icon_1">
+              speed
+            </igx-icon>
+          </igx-avatar>
+        </span>
+        <span igxListLineTitle>Phonk Beat Sync</span>
+        <span igxListLineSubTitle>Calculated 16 transient peak points from audio waveform. Placed cuts at rapid bass sync markers.</span>
+      </igx-list-item>
+      <igx-list-item [selected]="this.ingredientsListSelectedItem != null && this.ingredientsListSelectedItem === '1'" (click)="ingredientsListSelectedItem = '1'" class="beat-syncing">
+        <span igxListThumbnail>
+          <igx-avatar shape="circle" class="avatar-zsga-3u avatar-zsga-3u_1">
+            <igx-icon class="icon">
+              palette
+            </igx-icon>
+          </igx-avatar>
+        </span>
+        <span igxListLineTitle>Cinematic Noir &amp; Phonk LUT</span>
+        <span igxListLineSubTitle>Exposure -15%, Contrast +25%, Shadows Shift to deep charcoal-violet, Highlights shift to neon cyan.</span>
+      </igx-list-item>
+      <igx-list-item [selected]="this.ingredientsListSelectedItem != null && this.ingredientsListSelectedItem === '2'" (click)="ingredientsListSelectedItem = '2'" class="beat-syncing">
+        <span igxListThumbnail>
+          <igx-avatar shape="circle" class="avatar-zsga-3u avatar-zsga-3u_2">
+            <igx-icon class="icon">
+              filter_b_and_w
+            </igx-icon>
+          </igx-avatar>
+        </span>
+        <span igxListLineTitle>Glow &amp; Shake Drift Transitions</span>
+        <span igxListLineSubTitle>Adds micro shake drift on peak Phonk bass drops with auto stabilization adjustment.</span>
+      </igx-list-item>
+      <igx-list-item [selected]="this.ingredientsListSelectedItem != null && this.ingredientsListSelectedItem === '3'" (click)="ingredientsListSelectedItem = '3'" class="beat-syncing">
+        <span igxListThumbnail>
+          <igx-avatar shape="circle" class="ai-tiny-avatar ai-tiny-avatar_3">
+            <igx-icon class="icon_1">
+              closed_caption
+            </igx-icon>
+          </igx-avatar>
+        </span>
+        <span igxListLineTitle>Whisper Automated Subtitles</span>
+        <span igxListLineSubTitle>Transcribed vocal frequencies and formatted neon cyber subtitle overlays.</span>
+      </igx-list-item>
+    </igx-list>
+    <div class="row-layout decision-actions">
+      <button igxButton="outlined" type="button" class="reject-recipe">
+        <igx-icon class="icon_2">
+          close
+        </igx-icon>
+        <span>Reject Options</span>
+      </button>
+      <button igxButton="contained" type="button" class="accept-recipe">
+        <igx-icon class="icon_1">
+          check
+        </igx-icon>
+        <span>Apply to Timeline</span>
+      </button>
+    </div>
+  </div>
+</div>

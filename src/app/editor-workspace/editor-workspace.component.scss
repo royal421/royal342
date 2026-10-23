@@ -1,0 +1,402 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px 0;
+  overflow: auto;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.editor-main-wrapper {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  padding: 16px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.row-layout {
+  display: flex;
+}
+.editor-main-section {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px;
+  position: relative;
+  min-height: 480px;
+  flex-shrink: 0;
+}
+.media-panel {
+  background-color: #1E1E1E;
+  border-color: #333333;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px 0;
+  position: relative;
+  padding: 12px;
+  width: 260px;
+  min-width: 260px;
+  max-width: 260px;
+  flex-shrink: 0;
+  flex-basis: 260px;
+}
+.video-preview {
+  background-color: #1A1A1A;
+  border-color: #333333;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px 0;
+  position: relative;
+  padding: 12px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.preview-header {
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.video-canvas-container {
+  background-color: #000000;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
+  overflow: hidden;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.player-controls-container {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.playback-buttons {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.preview-options {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 0 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.properties-inspector {
+  background-color: #1E1E1E;
+  border-color: #333333;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  padding: 12px;
+  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
+  flex-shrink: 0;
+  flex-basis: 300px;
+}
+.inspector-accordion {
+  overflow-y: auto;
+  flex-shrink: 0;
+}
+.column-layout-5-4so-8 {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.quick-action-toolbar {
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.timeline-container {
+  background-color: #1E1E1E;
+  border-color: #333333;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px 0;
+  position: relative;
+  padding: 12px;
+  min-height: 220px;
+  flex-shrink: 0;
+}
+.timeline-header {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.video-track {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0 12px;
+  overflow: auto;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+}
+.video-clip-1 {
+  background-color: #8A2BE2;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  width: 400px;
+  height: 36px;
+  min-width: 400px;
+  min-height: 36px;
+  max-width: 400px;
+  max-height: 36px;
+}
+.video-clip-2 {
+  background-color: #5c1ea1;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  width: 200px;
+  height: 36px;
+  min-width: 200px;
+  min-height: 36px;
+  max-width: 200px;
+  max-height: 36px;
+}
+.audio-clip-1 {
+  background-color: #00E5FF;
+  border-radius: 4px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  position: relative;
+  width: 500px;
+  height: 30px;
+  min-width: 500px;
+  min-height: 30px;
+  max-width: 500px;
+  max-height: 30px;
+}
+.content {
+  color: #FFFFFF;
+  height: max-content;
+  min-width: min-content;
+}
+.icon {
+  color: #00E5FF;
+}
+.avatar-rq-5-7xd {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: #8A2BE2;
+}
+.icon_1 {
+  color: #FFFFFF;
+}
+.avatar-nv-4-9cm {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: #00E5FF;
+}
+.icon_2 {
+  color: #121212;
+}
+.drag-drop-hint {
+  text-align: center;
+  color: #AAAAAA;
+  height: max-content;
+  min-width: min-content;
+}
+.preview-render-badge {
+  width: max-content;
+  height: max-content;
+}
+.icon-rpzoy {
+  --size: 18px;
+  font-size: 18px;
+  width: 18px;
+  height: 18px;
+  color: #00E5FF;
+}
+.preview-image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  flex-shrink: 0;
+}
+.timecode {
+  color: #00E5FF;
+  height: max-content;
+  min-width: min-content;
+}
+.text-uf-4-3h {
+  color: #AAAAAA;
+  height: max-content;
+  min-width: min-content;
+}
+.video-icon {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: #8A2BE2;
+}
+.audio-icon {
+  --size: 24px;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+  color: #00E5FF;
+}
+.text-7mgct {
+  color: #121212;
+  height: max-content;
+  min-width: min-content;
+}
+.avatar-rq-5-7xd_1::part(base) {
+  --igx-avatar-color: #FFFFFF;
+}
+.avatar-nv-4-9cm_1::part(base) {
+  --igx-avatar-color: #121212;
+}
+.import-media {
+  --foreground: #00E5FF;
+  --border-color: #00E5FF;
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.playback-scrubber {
+  min-width: 50px;
+}
+.prev-frame {
+  --foreground: #FFFFFF;
+}
+.playpause {
+  --foreground: #FFFFFF;
+  --background: #8A2BE2;
+  --ig-size: var(--ig-size-large);
+}
+.speed-presets {
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  min-width: min-content;
+}
+.whisper-captions {
+  width: max-content;
+  height: max-content;
+}
+.resolution-select {
+  height: max-content;
+  min-width: min-content;
+}
+.render-button {
+  --foreground: #121212;
+  --background: #00E5FF;
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.undo-button {
+  --foreground: #FFFFFF;
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  flex-shrink: 0;
+}
+.split {
+  --foreground: #00E5FF;
+  --ig-size: var(--ig-size-small);
+  height: max-content;
+  flex-shrink: 0;
+}
+.media-assets {
+  height: max-content;
+}
+.car-cinematic-clip {
+  --item-background: #252525;
+  --item-background-hover: var(--ig-list-item-background-hover, lch(from var(--item-background) calc(l + (50 - l) * 0.1 + sign(50 - l) * 5) c h));
+  --item-background-active: var(--ig-list-item-background-active, var(--item-background-hover));
+  --item-background-selected: var(--ig-list-item-background-selected, var(--item-background-active));
+  --item-text-color: #FFFFFF;
+  --item-text-color-hover: #FFFFFF;
+  --item-text-color-active: #FFFFFF;
+  --item-text-color-selected: #FFFFFF;
+  --item-title-color: #FFFFFF;
+  --item-title-color-hover: #FFFFFF;
+  --item-title-color-active: #FFFFFF;
+  --item-title-color-selected: #FFFFFF;
+  --item-action-color: #FFFFFF;
+  --item-action-color-hover: #FFFFFF;
+  --item-action-color-active: #FFFFFF;
+  --item-action-color-selected: #FFFFFF;
+  --item-subtitle-color: #FFFFFF;
+  --item-subtitle-color-hover: #FFFFFF;
+  --item-subtitle-color-active: #FFFFFF;
+  --item-subtitle-color-selected: #FFFFFF;
+  --item-thumbnail-color: #FFFFFF;
+  --item-thumbnail-color-hover: #FFFFFF;
+  --item-thumbnail-color-active: #FFFFFF;
+  --item-thumbnail-color-selected: #FFFFFF;
+}

@@ -1,0 +1,253 @@
+<div class="column-layout editor-main-wrapper">
+  <div class="row-layout editor-main-section">
+    <div class="column-layout media-panel">
+      <h6 class="content">
+        Media Bin
+      </h6>
+      <button igxButton="outlined" type="button" class="import-media">
+        <igx-icon class="icon">
+          video_call
+        </igx-icon>
+        <span>Import Media</span>
+      </button>
+      <igx-list class="media-assets">
+        <igx-list-item [selected]="this.mediaAssetsSelectedItem != null && this.mediaAssetsSelectedItem === '0'" (click)="mediaAssetsSelectedItem = '0'" class="car-cinematic-clip">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar-rq-5-7xd avatar-rq-5-7xd_1">
+              <igx-icon class="icon_1">
+                movie
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>car_drift_cinematic.mp4</span>
+          <span igxListLineSubTitle>00:45 | 1080p | 30fps</span>
+        </igx-list-item>
+        <igx-list-item [selected]="this.mediaAssetsSelectedItem != null && this.mediaAssetsSelectedItem === '1'" (click)="mediaAssetsSelectedItem = '1'" class="car-cinematic-clip">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar-nv-4-9cm avatar-nv-4-9cm_1">
+              <igx-icon class="icon_2">
+                audiotrack
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>phonk_beat_120bpm.wav</span>
+          <span igxListLineSubTitle>02:30 | Stereo | 44.1kHz</span>
+        </igx-list-item>
+      </igx-list>
+      <p class="ig-typography__caption drag-drop-hint">
+        Drag and drop files to timeline below
+      </p>
+    </div>
+    <div class="column-layout video-preview">
+      <div class="row-layout preview-header">
+        <p class="ig-typography__body-2 content">
+          Previewing: car_drift_cinematic.mp4
+        </p>
+        <igx-chip class="preview-render-badge">
+          <igx-prefix>
+            <igx-icon class="icon-rpzoy">
+              memory
+            </igx-icon>
+          </igx-prefix>
+          Local Engine Active
+        </igx-chip>
+      </div>
+      <div class="column-layout video-canvas-container">
+        <img src="/assets/dark-moody-cinematic-car-night-9b9bf5e88305.png" alt="" class="preview-image" />
+      </div>
+      <div class="column-layout player-controls-container">
+        <igx-slider [ngModel]="value" [continuous]="true" [minValue]="0" [maxValue]="100" [secondaryTickLabels]="false" (ngModelChange)="value = $event" class="playback-scrubber"></igx-slider>
+        <div class="row-layout preview-header">
+          <p class="ig-typography__overline timecode">
+            00:20.15 / 00:45.00
+          </p>
+          <div class="row-layout playback-buttons">
+            <button igxIconButton="flat" class="prev-frame">
+              <igx-icon class="icon_1">
+                first_page
+              </igx-icon>
+            </button>
+            <button igxIconButton="contained" class="playpause">
+              <igx-icon class="icon_1">
+                play_arrow
+              </igx-icon>
+            </button>
+            <button igxIconButton="flat" class="prev-frame">
+              <igx-icon class="icon_1">
+                last_page
+              </igx-icon>
+            </button>
+          </div>
+          <div class="row-layout preview-options">
+            <button igxIconButton="flat" class="prev-frame">
+              <igx-icon class="icon_1">
+                volume_up
+              </igx-icon>
+            </button>
+            <button igxIconButton="flat" class="prev-frame">
+              <igx-icon class="icon_1">
+                fullscreen
+              </igx-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="column-layout properties-inspector">
+      <h6 class="content">
+        Properties &amp; Export
+      </h6>
+      <igx-accordion class="inspector-accordion">
+        <igx-expansion-panel>
+          <igx-expansion-panel-body>
+            <div class="column-layout column-layout-5-4so-8">
+              <p class="ig-typography__caption text-uf-4-3h">
+                Clip Scale
+              </p>
+              <igx-slider [ngModel]="value1" [minValue]="50" [maxValue]="200" [step]="10" [secondaryTickLabels]="false" (ngModelChange)="value1 = $event" class="playback-scrubber"></igx-slider>
+              <p class="ig-typography__caption text-uf-4-3h">
+                Speed Multiplier
+              </p>
+              <igx-buttongroup class="speed-presets">
+                <button igxButton>
+                  0.5x
+                </button>
+                <button igxButton>
+                  1.0x
+                </button>
+                <button igxButton>
+                  2.0x
+                </button>
+              </igx-buttongroup>
+            </div>
+          </igx-expansion-panel-body>
+          <igx-expansion-panel-header>
+            <igx-expansion-panel-title>Transform &amp; Speed</igx-expansion-panel-title>
+          </igx-expansion-panel-header>
+        </igx-expansion-panel>
+        <igx-expansion-panel>
+          <igx-expansion-panel-body>
+            <div class="column-layout column-layout-5-4so-8">
+              <igx-switch [(ngModel)]="checked" class="whisper-captions">
+                Auto-generate Captions
+              </igx-switch>
+              <igx-switch class="whisper-captions">
+                Denoise Audio (FFmpeg)
+              </igx-switch>
+              <igx-switch [(ngModel)]="checked1" class="whisper-captions">
+                Calculate Beat Markers
+              </igx-switch>
+            </div>
+          </igx-expansion-panel-body>
+          <igx-expansion-panel-header>
+            <igx-expansion-panel-title>Smart Audio &amp; Captions</igx-expansion-panel-title>
+          </igx-expansion-panel-header>
+        </igx-expansion-panel>
+        <igx-expansion-panel>
+          <igx-expansion-panel-body>
+            <div class="column-layout column-layout-5-4so-8">
+              <igx-select type="border" placeholder="Select Output Format" class="resolution-select">
+                <igx-select-item value="1">
+                  1080p Web Portrait (9:16)
+                </igx-select-item>
+                <igx-select-item value="2">
+                  1080p Landscape (16:9)
+                </igx-select-item>
+                <igx-select-item value="3">
+                  720p Optimized (Local Render)
+                </igx-select-item>
+                <label igxLabel>Target Output</label>
+              </igx-select>
+              <button igxButton="contained" type="button" class="render-button">
+                <igx-icon class="icon_2">
+                  download
+                </igx-icon>
+                <span>Export Now</span>
+              </button>
+            </div>
+          </igx-expansion-panel-body>
+          <igx-expansion-panel-header>
+            <igx-expansion-panel-title>Export Profiles</igx-expansion-panel-title>
+          </igx-expansion-panel-header>
+        </igx-expansion-panel>
+      </igx-accordion>
+      <div class="row-layout quick-action-toolbar">
+        <button igxButton="outlined" type="button" class="undo-button">
+          <igx-icon class="icon_1">
+            undo
+          </igx-icon>
+          <span>Undo</span>
+        </button>
+        <button igxButton="outlined" type="button" class="undo-button">
+          <igx-icon class="icon_1">
+            redo
+          </igx-icon>
+          <span>Redo</span>
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="column-layout timeline-container">
+    <div class="row-layout timeline-header">
+      <p class="content">
+        Timeline Editor (Drag &amp; Drop / Touch Gestures)
+      </p>
+      <div class="row-layout preview-options">
+        <button igxButton="outlined" type="button" class="split">
+          <igx-icon class="icon">
+            content_cut
+          </igx-icon>
+          <span>Split</span>
+        </button>
+        <button igxButton="outlined" type="button" class="split">
+          <igx-icon class="icon">
+            compare_arrows
+          </igx-icon>
+          <span>Trim</span>
+        </button>
+        <button igxButton="outlined" type="button" class="split">
+          <igx-icon class="icon">
+            crop
+          </igx-icon>
+          <span>Crop</span>
+        </button>
+      </div>
+    </div>
+    <div class="column-layout player-controls-container">
+      <div class="row-layout video-track">
+        <igx-icon class="video-icon">
+          videocam
+        </igx-icon>
+        <div class="row-layout video-clip-1">
+          <p class="ig-typography__caption content">
+            car_drift_cinematic.mp4
+          </p>
+          <p class="ig-typography__overline content">
+            0:00 - 0:45
+          </p>
+        </div>
+        <div class="row-layout video-clip-2">
+          <p class="ig-typography__caption content">
+            outro.mp4
+          </p>
+          <p class="ig-typography__overline content">
+            0:45 - 0:55
+          </p>
+        </div>
+      </div>
+      <div class="row-layout video-track">
+        <igx-icon class="audio-icon">
+          volume_up
+        </igx-icon>
+        <div class="row-layout audio-clip-1">
+          <p class="ig-typography__caption text-7mgct">
+            phonk_beat_120bpm.wav
+          </p>
+          <p class="ig-typography__overline text-7mgct">
+            0:00 - 0:55
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

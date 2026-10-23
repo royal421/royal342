@@ -1,0 +1,268 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  overflow: auto;
+}
+.row-layout {
+  display: flex;
+}
+.copilot-container {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px;
+  position: relative;
+  padding: 24px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.column-layout {
+  display: flex;
+  flex-direction: column;
+}
+.ai-input-chat {
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 24px 0;
+  position: relative;
+  min-width: 360px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.header {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.badge-title {
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+  gap: 0 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.chat-simulation {
+  background-color: #1E1E1E;
+  border-color: #333333;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 16px 0;
+  position: relative;
+  padding: 16px;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.user-bubble {
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.user-text {
+  background-color: #2A2A2A;
+  border-radius: 12px 12px 0px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 20px;
+  position: relative;
+  padding: 10px 14px;
+  max-width: 80%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.ai-bubble {
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  gap: 0 8px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.ai-text {
+  background-color: #8A2BE2;
+  border-radius: 12px 12px 12px 0px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 20px;
+  position: relative;
+  padding: 10px 14px;
+  max-width: 80%;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+.input-area {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.ai-proposed-recipe {
+  background-color: #1E1E1E;
+  border-color: #333333;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 20px 0;
+  position: relative;
+  padding: 24px;
+  min-width: 420px;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.recipe-header {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: flex-start;
+  gap: 8px 0;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.decision-actions {
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: 12px;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-shrink: 0;
+}
+.copilot-avatar {
+  --igx-avatar-background: #8A2BE2;
+}
+.icon {
+  color: #FFFFFF;
+}
+.content {
+  color: #FFFFFF;
+  height: max-content;
+  min-width: min-content;
+}
+.description {
+  color: #AAAAAA;
+  height: max-content;
+  min-width: min-content;
+}
+.ai-tiny-avatar {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: #00E5FF;
+}
+.icon_1 {
+  color: #121212;
+}
+.avatar-zsga-3u {
+  --ig-size: var(--ig-size-small);
+  --igx-avatar-background: #8A2BE2;
+}
+.icon_2 {
+  color: #FF0000;
+}
+.copilot-avatar_1::part(base) {
+  --igx-avatar-color: #FFFFFF;
+}
+.ai-tiny-avatar_1::part(base) {
+  --igx-avatar-color: #121212;
+}
+.ai-tiny-avatar_2::part(base) {
+  --igx-avatar-color: #121212;
+}
+.ai-tiny-avatar_3::part(base) {
+  --igx-avatar-color: #121212;
+}
+.avatar-zsga-3u_1::part(base) {
+  --igx-avatar-color: #FFFFFF;
+}
+.avatar-zsga-3u_2::part(base) {
+  --igx-avatar-color: #FFFFFF;
+}
+.prompt-input {
+  height: max-content;
+  min-width: min-content;
+}
+.submit-ai-button {
+  --foreground: #FFFFFF;
+  --background: #8A2BE2;
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+}
+.reject-recipe {
+  --foreground: #FF0000;
+  --border-color: #FF0000;
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.accept-recipe {
+  --foreground: #121212;
+  --background: #00E5FF;
+  --ig-size: var(--ig-size-medium);
+  height: max-content;
+  flex-shrink: 0;
+}
+.recipe-badge {
+  width: max-content;
+  height: max-content;
+}
+.ingredients-list {
+  height: max-content;
+}
+.beat-syncing {
+  --item-text-color: #FFFFFF;
+  --item-text-color-hover: #FFFFFF;
+  --item-text-color-active: #FFFFFF;
+  --item-text-color-selected: #FFFFFF;
+  --item-title-color: #FFFFFF;
+  --item-title-color-hover: #FFFFFF;
+  --item-title-color-active: #FFFFFF;
+  --item-title-color-selected: #FFFFFF;
+  --item-action-color: #FFFFFF;
+  --item-action-color-hover: #FFFFFF;
+  --item-action-color-active: #FFFFFF;
+  --item-action-color-selected: #FFFFFF;
+  --item-subtitle-color: #FFFFFF;
+  --item-subtitle-color-hover: #FFFFFF;
+  --item-subtitle-color-active: #FFFFFF;
+  --item-subtitle-color-selected: #FFFFFF;
+  --item-thumbnail-color: #FFFFFF;
+  --item-thumbnail-color-hover: #FFFFFF;
+  --item-thumbnail-color-active: #FFFFFF;
+  --item-thumbnail-color-selected: #FFFFFF;
+}

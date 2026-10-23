@@ -1,0 +1,62 @@
+:host {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.top-navigation {
+  height: max-content;
+  min-width: min-content;
+}
+.navigation-drawer {
+  --background: #1E1E1E;
+  --item-hover-background: var(--ig-navdrawer-item-hover-background, lch(from var(--background) calc(l + (50 - l) * 0.1 + sign(50 - l) * 5) c h));
+  --item-active-background: var(--ig-navdrawer-item-active-background, lch(from var(--background) calc(l + (50 - l) * 0.1 + sign(50 - l) * 10) c h));
+  --item-disabled-text-color: var(--ig-navdrawer-item-disabled-text-color, hsla(from hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1) h s l/0.38));
+  --item-disabled-icon-color: var(--ig-navdrawer-item-disabled-icon-color, hsla(from hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1) h s l/0.38));
+  --item-hover-icon-color: var(--ig-navdrawer-item-hover-icon-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --item-hover-text-color: var(--ig-navdrawer-item-hover-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --item-text-color: var(--ig-navdrawer-item-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --item-active-icon-color: var(--ig-navdrawer-item-active-icon-color, hsla(from color(from var(--item-active-background) var(--y-contrast)) h 0 l/1));
+  --item-active-text-color: var(--ig-navdrawer-item-active-text-color, hsla(from color(from var(--item-active-background) var(--y-contrast)) h 0 l/1));
+  --item-icon-color: var(--ig-navdrawer-item-icon-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  --item-header-text-color: var(--ig-navdrawer-item-header-text-color, hsla(from color(from var(--background) var(--y-contrast)) h 0 l/1));
+  min-width: min-content;
+  min-height: 0;
+  max-width: 320px;
+  flex-shrink: 0;
+}
+.main-view-container {
+  overflow: auto;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  flex-grow: 1;
+}
+.navbar-content {
+  gap: 1rem;
+}
+.icon-button-uuafq-5 {
+  --foreground: #FFFFFF;
+}
+.h6 {
+  margin: 0;
+}
+.icon {
+  color: #FFFFFF;
+}
+.row-layout {
+  display: flex;
+}
+.shell-body {
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+  position: relative;
+  min-width: 50px;
+  min-height: 50px;
+  flex-grow: 1;
+  flex-shrink: 0;
+}

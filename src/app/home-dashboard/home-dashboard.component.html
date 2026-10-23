@@ -1,0 +1,195 @@
+<div class="column-layout home-container">
+  <div class="row-layout home-header">
+    <div class="column-layout titles">
+      <h3 class="content_2">
+        EditGenius AI
+      </h3>
+      <p class="app-subtitle">
+        Offline-First Intelligent Video Editor &amp; Copilot
+      </p>
+    </div>
+    <div class="row-layout quick-actions">
+      <button igxButton="contained" type="button" class="new-project-button">
+        <igx-icon class="icon">
+          add
+        </igx-icon>
+        <span>New Project</span>
+      </button>
+      <button igxButton="outlined" type="button" class="ai-quick-edit-button">
+        <igx-icon class="icon_1">
+          bolt
+        </igx-icon>
+        <span>AI Quick Edit</span>
+      </button>
+      <button igxButton="flat" type="button" class="draft-recovery">
+        <igx-icon class="icon_2">
+          restore
+        </igx-icon>
+        <span>Draft Recovery (1)</span>
+      </button>
+    </div>
+  </div>
+  <div class="row-layout metrics">
+    <igx-card class="local-projects">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="local-avatar local-avatar_1">
+            <igx-icon class="icon">
+              folder
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Local Projects
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Subtitle goes here...
+        </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout content">
+          <h3 class="content_2">
+            12
+          </h3>
+          <p class="ig-typography__body-2 app-subtitle">
+            Saved on local storage
+          </p>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="local-projects">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="cloud-avatar cloud-avatar_1">
+            <igx-icon class="icon_3">
+              cloud_queue
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Optional Cloud Backup
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Subtitle goes here...
+        </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout content">
+          <h3 class="content_2">
+            Offline
+          </h3>
+          <p class="ig-typography__body-2 app-subtitle">
+            100% Privacy guaranteed
+          </p>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="local-projects">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="cloud-avatar cloud-avatar_2">
+            <igx-icon class="icon_3">
+              download_done
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Completed Exports
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Subtitle goes here...
+        </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout content">
+          <h3 class="content_2">
+            45
+          </h3>
+          <p class="ig-typography__body-2 app-subtitle">
+            1080p Web Exports
+          </p>
+        </div>
+      </igx-card-content>
+    </igx-card>
+    <igx-card class="local-projects">
+      <igx-card-header>
+        <div igxCardThumbnail>
+          <igx-avatar shape="circle" class="local-avatar local-avatar_2">
+            <igx-icon class="icon">
+              storage
+            </igx-icon>
+          </igx-avatar>
+        </div>
+        <h3 igxCardHeaderTitle>
+          Cache &amp; Media
+        </h3>
+        <h5 igxCardHeaderSubtitle>
+          Subtitle goes here...
+        </h5>
+      </igx-card-header>
+      <igx-card-content>
+        <div class="column-layout content">
+          <h3 class="content_2">
+            4.2 GB
+          </h3>
+          <p class="ig-typography__body-2 app-subtitle">
+            Temporary local cache
+          </p>
+        </div>
+      </igx-card-content>
+    </igx-card>
+  </div>
+  <div class="row-layout dashboard-split-content">
+    <div class="column-layout recent-projects-column">
+      <h5 class="content_2">
+        Recent Local Projects
+      </h5>
+      <igc-grid-lite [data]="northwindEmployees" class="recent-projects-grid">
+        <igc-grid-lite-column field="title" header="Project Name" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+        <igc-grid-lite-column field="lastEdited" header="Last Edited" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+        <igc-grid-lite-column field="tracksCount" header="Tracks" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+        <igc-grid-lite-column field="resolution" header="Resolution" [filterable]="true" [sortable]="true"></igc-grid-lite-column>
+      </igc-grid-lite>
+    </div>
+    <div class="column-layout templates-and-presets-column">
+      <h5 class="content_2">
+        Cinematic Templates &amp; LUTs
+      </h5>
+      <igx-list class="presets-list">
+        <igx-list-item [selected]="this.presetsListSelectedItem != null && this.presetsListSelectedItem === '0'" (click)="presetsListSelectedItem = '0'" class="phonk-cinematic-preset">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar-xl-5abg avatar-xl-5abg_1">
+              <igx-icon class="icon_3">
+                bolt
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Phonk Beat Sync</span>
+          <span igxListLineSubTitle>Audio signal tracking, rapid cuts</span>
+        </igx-list-item>
+        <igx-list-item [selected]="this.presetsListSelectedItem != null && this.presetsListSelectedItem === '1'" (click)="presetsListSelectedItem = '1'" class="phonk-cinematic-preset">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar-2d-3pbe avatar-2d-3pbe_1">
+              <igx-icon class="icon">
+                palette
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Cyberpunk Neon LUT</span>
+          <span igxListLineSubTitle>Vibrant cyans, deep violet highlights</span>
+        </igx-list-item>
+        <igx-list-item [selected]="this.presetsListSelectedItem != null && this.presetsListSelectedItem === '2'" (click)="presetsListSelectedItem = '2'" class="phonk-cinematic-preset">
+          <span igxListThumbnail>
+            <igx-avatar shape="circle" class="avatar-2d-3pbe avatar-2d-3pbe_2">
+              <igx-icon class="icon">
+                stay_current_portrait
+              </igx-icon>
+            </igx-avatar>
+          </span>
+          <span igxListLineTitle>Reels Portrait Preset</span>
+          <span igxListLineSubTitle>9:16 Mobile layout, auto captions</span>
+        </igx-list-item>
+      </igx-list>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,42 @@
+<igx-navbar class="top-navigation">
+  <igx-navbar-action>
+    <button igxIconButton="flat" [igxToggleAction]="navigationDrawer">
+      <igx-icon>
+        menu
+      </igx-icon>
+    </button>
+  </igx-navbar-action>
+  <igx-navbar-title class="navbar-content">
+    <h6 class="h6">
+      EditGenius AI Editor
+    </h6>
+  </igx-navbar-title>
+  <button igxIconButton="flat" class="icon-button-uuafq-5">
+    <igx-icon class="icon">
+      notifications
+    </igx-icon>
+  </button>
+  <button igxIconButton="flat" class="icon-button-uuafq-5">
+    <igx-icon class="icon">
+      settings
+    </igx-icon>
+  </button>
+</igx-navbar>
+<div class="row-layout shell-body">
+  <igx-nav-drawer [isOpen]="true" [pin]="true" width="320px" #navigationDrawer class="navigation-drawer">
+    <ng-template igxDrawer>
+      <div igxDrawerItem [active]="isActive(`/home-dashboard`)" [routerLink]="[`/home-dashboard`]">
+        <span>Home Dashboard</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/editor-workspace`)" [routerLink]="[`/editor-workspace`]">
+        <span>Editor Workspace</span>
+      </div>
+      <div igxDrawerItem [active]="isActive(`/ai-copilot`)" [routerLink]="[`/ai-copilot`]">
+        <span>AI Copilot Assistant</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="main-view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
